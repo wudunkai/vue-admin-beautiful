@@ -244,8 +244,14 @@ export default {
       }
 
       .layout-container-vertical {
+        .el-scrollbar.side-bar-container {
+          display: block;
+        }
+        .el-scrollbar.side-bar-container.is-collapse {
+          display: none;
+        }
         .byui-main {
-          margin-left: $base-left-menu-width-min !important;
+          margin-left: 0 !important;
 
           .app-main-container {
             margin: 5px !important;
