@@ -564,7 +564,7 @@ export default {
   .card {
     ::v-deep {
       .el-card__body {
-        height: 390px;
+        min-height: 390px;
         overflow-y: scroll;
 
         .echarts {
