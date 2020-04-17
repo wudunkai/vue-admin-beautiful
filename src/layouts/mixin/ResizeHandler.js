@@ -11,6 +11,7 @@ export default {
     window.removeEventListener("resize", this.$_resizeHandler);
   },
   mounted() {
+    this.$baseAlert(navigator.userAgent);
     const isMobile = this.$_isMobile();
     if (isMobile) {
       store.dispatch("app/toggleDevice", "mobile");
