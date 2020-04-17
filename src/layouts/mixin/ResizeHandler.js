@@ -21,10 +21,8 @@ export default {
     if (isMobile) {
       store.dispatch("app/toggleDevice", "mobile");
       store.dispatch("settings/foldSideBar");
-      this.$baseMessage("手机端");
     } else {
       store.dispatch("settings/openSideBar");
-      this.$baseMessage("电脑端");
     }
   },
   methods: {

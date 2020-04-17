@@ -552,7 +552,7 @@ export default {
 .index-container {
   ::v-deep {
     .el-card__body {
-      height: 200px;
+      min-height: 200px;
 
       .echarts {
         width: 100%;
@@ -565,8 +565,7 @@ export default {
     ::v-deep {
       .el-card__body {
         min-height: 390px;
-        overflow-y: scroll;
-
+        height: auto;
         .echarts {
           width: 100%;
           height: 100%;
@@ -578,7 +577,7 @@ export default {
   .bottom {
     margin-top: 5px;
     height: 40px;
-    line-height: 40px;
+    padding-top: 20px;
     border-top: 1px solid $base-border-color;
     text-align: left;
     color: #595959;
