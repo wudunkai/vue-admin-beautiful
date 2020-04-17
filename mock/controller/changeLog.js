@@ -32,6 +32,10 @@ const data = [
       "换行符统一修改为lf 支持苹果 linux windows协同开发 强制开启最严格eslint规则 不要哭 严格是有好处的",
     timestamp: "2018-04-17",
   },
+  {
+    content: "彻底完成手机端适配",
+    timestamp: "2018-04-18",
+  },
 ];
 
 export default [
