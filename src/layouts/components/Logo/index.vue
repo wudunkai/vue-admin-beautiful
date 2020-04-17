@@ -1,7 +1,7 @@
 <template>
   <div :class="'logo-container-' + layout">
     <router-link to="/">
-      <byui-icon class="logo" :icon="['fas', 'piggy-bank']"></byui-icon>
+      <svg-icon class="logo" icon-class="vue"></svg-icon>
       <span class="title" :title="title">
         {{ title }}
       </span>
