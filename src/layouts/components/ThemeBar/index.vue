@@ -32,7 +32,7 @@
               <el-radio-button label="false">不开启</el-radio-button>
             </el-radio-group>
           </el-form-item>
-          <el-form-item label="菜单主题色">
+          <el-form-item label="菜单背景色">
             <el-color-picker
               v-model="theme.menuBackground"
               :predefine="[

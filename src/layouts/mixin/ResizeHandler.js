@@ -13,7 +13,7 @@ export default {
   mounted() {
     const userAgent = navigator.userAgent;
     if (userAgent.includes("Juejin")) {
-      alert(
+      this.$baseAlert(
         "vue-admin-beautiful不支持在掘金内置浏览器演示，请手动复制以下地址到浏览器中查看http://chu1204505056.gitee.io/vue-admin-beautiful"
       );
     }

@@ -187,7 +187,7 @@
           </div>
         </el-card>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+      <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <el-card class="card" shadow="never">
           <div slot="header">
             <span>更新日志</span>
@@ -201,6 +201,15 @@
               {{ activity.content }}
             </el-timeline-item>
           </el-timeline>
+        </el-card>
+      </el-col>
+      <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+        <el-card class="card" shadow="never">
+          <div slot="header">
+            <span>浏览器信息</span>
+          </div>
+          <el-alert :closable="false" :title="userAgent" type="success">
+          </el-alert>
         </el-card>
       </el-col>
     </el-row>
@@ -525,6 +534,8 @@ export default {
       //更新日志
       reverse: true,
       activities: [],
+      //浏览器信息
+      userAgent: navigator.userAgent,
     };
   },
   created() {
@@ -568,7 +579,7 @@ export default {
         height: auto;
         .echarts {
           width: 100%;
-          height: 100%;
+          height: 350px;
         }
       }
     }
