@@ -1,0 +1,63 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background: #f6f8f9;
+  position: relative;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  outline: none;
+  box-sizing: border-box;
+}
+
+.byui-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $base-color-blue;
+}
+
+.byui-overflow {
+  overflow: hidden;
+}
+
+/* 滚动条样式,新版本滚动条默认使用el-scroll方式,请仔细阅读文档 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144, 147, 153, 0.3);
+}
