@@ -53,6 +53,7 @@ export default {
         } else {
           this.show = false;
         }
+        this.$store.dispatch("settings/foldSideBar");
       });
     },
   },

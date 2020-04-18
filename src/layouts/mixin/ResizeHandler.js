@@ -20,7 +20,7 @@ export default {
     const isMobile = this.$_isMobile();
     if (isMobile) {
       store.dispatch("app/toggleDevice", "mobile");
-      store.dispatch("settings/openSideBar");
+      store.dispatch("settings/foldSideBar");
     } else {
       store.dispatch("settings/openSideBar");
     }

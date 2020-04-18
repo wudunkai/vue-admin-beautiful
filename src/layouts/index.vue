@@ -244,23 +244,17 @@ export default {
       }
 
       .layout-container-vertical {
-        .el-scrollbar.side-bar-container {
-          display: block;
-        }
         .el-scrollbar.side-bar-container.is-collapse {
-          display: none;
+          width: 0;
         }
-        .byui-main {
-          margin-left: 0 !important;
 
+        .byui-main {
+          width: 100%;
+          margin-left: 0;
           .app-main-container {
             margin: 5px !important;
             width: calc(100% - 10px) !important;
           }
-
-          /*.app-main-container {
-            width: calc(100% - 30px) !important;
-          }*/
         }
       }
 
@@ -268,15 +262,6 @@ export default {
         .fixed-header {
           left: 0 !important;
           width: 100% !important;
-        }
-      }
-
-      &.is-collapse-main {
-        margin-left: $base-left-menu-width-min !important;
-
-        .fixed-header {
-          width: 100% !important;
-          left: 0 !important;
         }
       }
     }
