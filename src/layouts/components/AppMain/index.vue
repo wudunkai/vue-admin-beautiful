@@ -37,7 +37,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["cachedViews"]),
+    ...mapGetters(["cachedViews", "device"]),
     key() {
       return this.$route.path;
     },
@@ -53,7 +53,9 @@ export default {
         } else {
           this.show = false;
         }
-        this.$store.dispatch("settings/foldSideBar");
+        if ("mobile" === this.device) {
+          this.$store.dispatch("settings/foldSideBar");
+        }
       });
     },
   },
